@@ -14,7 +14,7 @@ def minOperations(n):
     copy_num = 0
     op_num = 0
     while h_num < n:
-        ops += 2
+        op_num += 2
         h_num += 1
         if n % h_num == 0:
             copy_num = h_num
