@@ -14,12 +14,10 @@ def minOperations(n):
     copy_num = 0
     op_num = 0
     while h_num < n:
-        op_num += 2
-        h_num += 1
         if n % h_num == 0:
             copy_num = h_num
             op_num += 1
+
         h_num += copy_num
         op_num += 1
-
     return op_num
