@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" pascal triangle"""
+"""pascal triangle"""
 
 
 def pascal_triangle(n):
@@ -8,10 +8,10 @@ def pascal_triangle(n):
         return []
     triangle = [[1]]
     for i in range(1, n):
-        prev_row = triangle[i-1]
+        prev_row = triangle[i - 1]
         row = [1]
         for j in range(1, i):
-            row.append(prev_row[j-1] + prev_row[j])
+            row.append(prev_row[j - 1] + prev_row[j])
         row.append(1)
         triangle.append(row)
     return triangle
